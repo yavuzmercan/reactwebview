@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1023791109268",
+    "firebase_url": "https://tkuand-f883e.firebaseio.com",
+    "project_id": "tkuand-f883e",
+    "storage_bucket": "tkuand-f883e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1023791109268:android:a75b8556b58ce2e74b9081",
+        "android_client_info": {
+          "package_name": "com.ff.toptankoyurunleri.webview"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1023791109268-h74bh99ds0e8u5ebur4pli4u6se3c17m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9Vf_uSQZdUqHbgIZcxFzx0Z8vFtrOhs8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1023791109268-h74bh99ds0e8u5ebur4pli4u6se3c17m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
