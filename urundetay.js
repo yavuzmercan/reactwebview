@@ -8,40 +8,27 @@ export default class UrunDetay extends Component {
     constructor(props) {
         super(props);
         
-        this.state = {
-         detailData:{}
-        }
+        this.state = {}
       }
+      
+    render() {
 
-      
-      
-    componentDidMount() {
-        console.log('this props detail:',JSON.stringify(this.props));
         const {route,navigation} = this.props;
         const {params} = route;
-        console.log('params:',params)
-        this.setState({detailData:params});
-        
-    }
     
-    render() {
-        
-        const {detailData} = this.state;
-        console.log('deail:',this.props.navigation)
-        let vw =  <Text>Loading...</Text>;
-        if(detailData.id && detailData.id >0 ){
-        vw =  
-        <View style={styles.container}>
-        <View style={styles.headerbar}>
-            <Text style={styles.pagetitle}>{this.state.detailData.title}</Text> 
-        </View>
-        <WebView
-        source={{ uri: 'https://app.toptankoyurunleri.com/urun/'+this.state.detailData.seotitle+'/'+this.state.detailData.id}}
-        style={{ marginTop: 55 }}
-        />
-        </View>
-        }
-        return  vw 
+        return(
+            <View style={styles.container}>
+            <View style={styles.headerbar}>
+                <Text style={styles.pagetitle}>{params.title}</Text> 
+            </View>
+            <WebView
+            cacheEnabled={false}
+            source={{ uri: 'https://app.toptankoyurunleri.com/urun/'+params.seotitle+'/'+params.id}}
+            style={{ marginTop: 55 }}
+            />
+            </View>
+        )
+
     }
 }
 
